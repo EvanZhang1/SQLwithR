@@ -1,0 +1,23 @@
+##### Connection information #####
+dsn_driver = "{com.ibm.db2.jcc.DB2Driver}"
+dsn_database = "bludb"
+dsn_hotstname = "19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud"
+dsn_port = "30699"
+dsn_protocol = "TCPIP"
+dsn_id = "xbf80000"
+dsn_pwd = "Iy0AYl6MN8NlubtC"
+dsn_security <- "ssl"
+
+##### Create a database connection #####
+
+   conn_path <- paste("DRIVER=",com.ibm.db2.jcc.DB2Driver,
+                  ";DATABASE=",bludb,
+                  ";HOSTNAME=",19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud,
+                  ";PORT=",30699,
+                  ";PROTOCOL=",TCPIP,
+                  ";UID=",xbf80000,
+                  ";PWD=",Iy0AYl6MN8NlubtC,
+                  ";SECURITY=",ssl,        
+                    sep="")
+    conn <- odbcDriverConnect(conn_path)
+ 
